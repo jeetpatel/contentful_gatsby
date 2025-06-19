@@ -1,2 +1,2 @@
-# contentful_gatsby
+# Contentful Gatsby
 Contentful CMS with Gatsby JS Framework
