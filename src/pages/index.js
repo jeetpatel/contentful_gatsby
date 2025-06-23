@@ -6,7 +6,7 @@ import Fallback from "../components/fallback"
 import SEOHead from "../components/head"
 
 export default function Homepage(props) {
-  const { homepage } = props.data
+  const { homepage, headerMenu } = props.data
 
   return (
     <Layout>
