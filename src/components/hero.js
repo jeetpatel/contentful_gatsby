@@ -31,8 +31,8 @@ export default function Hero(props) {
               {props.kicker && <Kicker>{props.kicker}</Kicker>}
               {props.h1}
             </Heading>
-            <Subhead as="h2">{props.subhead}</Subhead>
-            <Text as="p">{props.text}</Text>
+            <Subhead as="h2">subhead{props.subhead}</Subhead>
+            <Text as="p">P:{props.text}</Text>
             <ButtonList links={props.links} />
           </Box>
         </Flex>
@@ -55,6 +55,7 @@ export const query = graphql`
     }
     image {
       id
+      url
       gatsbyImageData
       alt
     }

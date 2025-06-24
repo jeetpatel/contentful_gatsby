@@ -27,7 +27,7 @@ const Header = () => {
         internalName
         menuItems {
           groupName
-          groupLink {
+          featuredPages {
             pageName
             slug
           }
@@ -52,11 +52,8 @@ const Header = () => {
           </NavLink>
           <nav>
             <FlexList gap={4}>
-              <li>
-                <NavLink to={`/`}>Home</NavLink>
-              </li>
               {headerMenu.menuItems.map((item, index) => {
-                const firstPage = item?.groupLink // ✅ safely get first item
+                const firstPage = item.featuredPages?.[0] // ✅ safely get first item
                 if (!firstPage) return null
                 return (
                   <li>
